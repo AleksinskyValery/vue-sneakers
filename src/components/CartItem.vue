@@ -15,7 +15,7 @@ defineProps({
       <p class="mb-2">{{ title }}</p>
 
       <div class="flex justify-between">
-        <span class="font-bold">{{ price }} руб.</span>
+        <span class="font-bold">{{ price.toLocaleString('ru-RU') }} ₽</span>
         <button
           @click="removeFromCart"
           type="button"

@@ -46,12 +46,12 @@ defineProps({
       <div class="flex gap-2 items-baseline">
         <span>Итого:</span>
         <div class="flex-1 border-b border-dashed"></div>
-        <span class="font-bold">{{ totalPrice }} ₽</span>
+        <span class="font-bold">{{ totalPrice.toLocaleString('ru-RU') }} ₽</span>
       </div>
       <div class="flex gap-2 items-baseline">
         <span>Налог 5%:</span>
         <div class="flex-1 border-b border-dashed"></div>
-        <span class="font-bold">{{ vatPrice }} ₽</span>
+        <span class="font-bold">{{ vatPrice.toLocaleString('ru-RU') }} ₽</span>
       </div>
       <button
         v-if="totalPrice"

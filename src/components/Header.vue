@@ -40,7 +40,7 @@ const route = useRoute()
             class="bg-[url(/cart.svg)] bg-no-repeat bg-left bg-contain pl-8 font-bold"
             type="button"
           >
-            {{ total }} ₽
+            {{ total.toLocaleString('ru-RU') }} ₽
           </button>
         </li>
         <li class="flex items-center cursor-pointer gap-3 text-slate-500 hover:text-black">
